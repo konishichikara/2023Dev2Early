@@ -27,16 +27,19 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarsExample02">
             <ul class="navbar-nav">
-                <a class="nav-link" href="./name.html">
+                <form>
+                    <input class="form-control" type="text" placeholder="検索" aria-label="Search">
+                </form>
+                <a class="nav-link" href="name.html">
                     ニックネーム登録・変更
                 </a>
-                <a class="nav-link" href="./sinki.html">
+                <a class="nav-link" href="sinki.html">
                     新規登録
                 </a>
-                <a class="nav-link" href="./login.html">
+                <a class="nav-link" href="login.html">
                     ログイン
                 </a>
-                <a class="nav-link" href="./logout.html">
+                <a class="nav-link" href="logout.html">
                     ログアウト
                 </a>
             </ul>
@@ -45,7 +48,21 @@
 </nav>
 
 <div class = "row">
-    <div class = "col-8">メイン画面</div>
-    <div class = "col-4">サブ画面
+    <div class = "col-8">
+        <br>
+        <form action="new-chat.html" method="post" style="text-align: center;">
+            <input class="btn btn-dark btn-lg" type="submit" value="新しい部屋を作る">
+        </form>
+    </div>  
+
+
+
+
+
+
+    <div class = "col-4">
         <img src = "./img/sabu.jpg" class="img-fluid">
     </div>
+
+
+    
