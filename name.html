@@ -5,7 +5,15 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <title>ニックネーム登録・変更</title>
     <style>
-        
+        #nname-form{
+            text-align: center;
+            margin: auto;
+            margin-top: 10%;
+            width: 500px;
+        }
+        #sbtn{
+            margin-top: 5%;
+        }
     </style>
     <script>
 
@@ -48,11 +56,11 @@
     <form action="logincheck.php" method="post" style="text-align: center;">
         <div class="row">
             <div class="col-md-12">
-                <div class="form-floating col-md-6">
+                <div class="form-floating col-md-12" id="nname-form">
                     <input type="text" class="form-control" pattern=".+\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]" value="" required name="mail" inputmode="email" minlength="0" maxlength="40">
                     <label for="lastname">メールアドレス</label>
                     <!-- <button class="btn btn-dark btn-lg text-white" type="button" onclick="registClick()">ログイン</button> -->
-                    <input class="btn btn-outline-success text-dark btn-lg" type="submit" value="ログイン">
+                    <input class="btn btn-outline-success text-dark btn-lg" id="sbtn" type="submit" value="ログイン">
                 </div>
             </div>
     </form> 
