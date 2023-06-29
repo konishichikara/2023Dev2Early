@@ -5,14 +5,21 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <title>ニックネーム登録・変更</title>
     <style>
-        #nname-form{
+        #nname-form{/*t r b l*//*tb rl*/
             text-align: center;
-            margin: auto;
-            margin-top: 10%;
-            width: 500px;
+            margin: 20vh auto 0 auto;
+            width: 30vw;
         }
-        #sbtn{
-            margin-top: 5%;
+        #mailadd{
+            box-shadow: #197905 0 0 500px;
+            position: relative;
+        }
+        #wsbtn{
+            margin-top: 5vh;
+            width: 30vw;
+            background-color: white;
+            position: relative;
+            z-index: 1;
         }
     </style>
     <script>
@@ -28,7 +35,7 @@
     <nav class="navbar navbar-expand navbar-dark" style="background: #197905;" aria-label="2 番目のナビゲーション バーの例">
         <div class="container-fluid">
             <a class="nav-link" href="./top.html">
-                <img src="./img/kataru.png" width="80" height="30" class="img-fluid">
+                <img src="./img/kataru.png" title="トップページ" width="80" height="30" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="ナビゲーションを切り替える">
                 <span class="navbar-toggler-icon"></span>
@@ -57,10 +64,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-floating col-md-12" id="nname-form">
-                    <input type="text" class="form-control" pattern=".+\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]" value="" required name="mail" inputmode="email" minlength="0" maxlength="40">
+                    <input type="text" class="form-control" id="mailadd" pattern=".+\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]" value="" required name="mail" inputmode="email" minlength="0" maxlength="40" autocomplete="off">
                     <label for="lastname">メールアドレス</label>
                     <!-- <button class="btn btn-dark btn-lg text-white" type="button" onclick="registClick()">ログイン</button> -->
-                    <input class="btn btn-outline-success text-dark btn-lg" id="sbtn" type="submit" value="ログイン">
+                    <input class="btn btn-outline-success text-dark btn-lg" id="wsbtn" type="submit" value="確定">
                 </div>
             </div>
     </form> 
