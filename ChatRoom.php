@@ -4,33 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatRoom</title>
-    <style>
-        #roomname{/*t r b l*/
-            text-align: center;
-            padding: 5px 0px 5px 0px;
-            margin: 0px;
-            background-color: aliceblue;
+    <style>/*t r b l*//*tb rl*//*rgba(赤 , 緑 , 青 , 透明度)*/
+        body{
+            overflow: scroll;
+            overflow-x: hidden;
+            width: 100vw;
+            height: 100%;
         }
-        #chatarea{/*t r b l*/
-            margin: 500px 0px 0px 20vw;
+
+        #nav{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        #roomname{
+            padding: 5px 0;
+            margin: 0;
+            text-align: center;
+            position: fixed;
+            top: 110px;
+            width: 100%;
+            z-index: 99;
+            background-color: rgba(30,100,300,20%);
+        }
+
+        #ChArea{
+            margin: 20vh 0 0 0;
+            padding: 0;
+            width: 100vw;
+            position: absolute;
+            overflow-x: hidden;
+        }
+        #ChSpace{
+            margin: 0;
+            padding: 1vh 0;
+            width: 100vw;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+        }
+        #ChH{
+            margin: 1vh 0 0 10vw;
+            padding: 0;
+            width: 20em;
+            border-style: solid;
+            border-color: gainsboro;
+            border-width: 0 0 1px 0;
+        }
+        #ChMsg{
+            margin: 0 0 1vh 1vw;
+            width: 70vw;
+            outline: none;
+            border-style: solid;
+            border-color: gainsboro;
+            border-width: 0 0 1px 0;
+            font-size: 25px;
+            word-wrap: break-word;
+            position: relative;
+        }
+        #DelCh{
+            margin: 0 0 0 30px;
+            padding: 0;
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 1px 0;
+        }
+        
+        #ChBArea{
+            margin: 0 0 0 20vw;
             padding: 5px;
             width: 60vw;
+            position: fixed;
+            top: 90%;
+            bottom: 10px;
         }
-        #chatbox{/*t r b l*/
-            margin: 0px 10px 0px 0px;
+        #chatbox{
+            margin: 0 10px 10px 0;
             padding: 10px;
             width: 50vw;
             outline: none;
             border-style: solid;
             border-color: #197905;
-            border-width: 0px 0px 1px 0px;
+            border-width: 0 0 1px 0;
             font-size: 20px;
         }
-        #write{/*t r b l*/
+        #write{
             padding: 12px;
             border-style: solid;
             border-color: #197905;
             border-width: 1px;
+            position: absolute;
         }
     </style>
 
@@ -43,7 +109,7 @@
 </head>
 <body>
     <!--nav-->
-    <nav class="navbar navbar-expand navbar-dark" style="background: #197905;" aria-label="2 番目のナビゲーション バーの例">
+    <nav class="navbar navbar-expand navbar-dark" id="nav" style="background: #197905;" aria-label="2 番目のナビゲーション バーの例">
         <div class="container-fluid">
             <a class="nav-link" href="./top.html">
                 <img src="./img/kataru.png" title="トップページ" width="80" height="30" class="img-fluid">
@@ -77,17 +143,25 @@
     <!--Room name-->
     <h1 class="" id="roomname">ルーム名</h1>
 
-    <!--Chat space-->
-
+    <form onsubmit="" method="">
+        <!--Chat space area-->
+        <span class="" id="ChArea">
+            <ul class="" id="ChSpace">
+                <div class="" id="ChH">ニックネーム</div>
+                    <li>
+                        <p class="" id="ChMsg" >チャットメッセージ</p>
+                        <input class="rounded" type="submit" id="DelCh" value="削除">
+                    </li>
+        </span>
+    </form>
 
     
     <form action="ChatCheck.php" method="post">
-        <!--Chat area-->
-        <div class="" id="chatarea">
-            <!--Chat box and Write btn-->
-            <input class="alert-secondary" type="textbox" id="chatbox" placeholder="ここに内容を書く" required minlength="1" maxlength="100" autocomplete="off">
+        <!--Chat box area-->
+        <span class="" id="ChBArea">
+            <input class="alert-secondary" type="textbox" id="chatbox" placeholder="ここに内容を書く" required minlength="1" maxlength="100" autocomplete="off"><!--autocompleteは過去に入力した内容を表示する機能のON/OFFするための要素-->
             <input class="rounded" type="submit" id="write" value="書き込む">
-        </div>
+        </span>
     </form>
 </body>
 </html>
