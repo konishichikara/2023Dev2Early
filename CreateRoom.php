@@ -48,7 +48,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-floating">
-                    <input type="text" class="form-control" pattern=".+\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]" value="" required name="room_name" inputmode="email" minlength="0" maxlength="40">
+                    <input type="text" class="form-control" pattern=".+\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]" name="room_name" inputmode="email" minlength="0" maxlength="40">
                     <label for="lastname">メールアドレス</label>
                     <input class="btn btn-outline-success text-dark btn-lg" type="submit" value="送信">
                 </div>
