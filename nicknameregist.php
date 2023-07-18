@@ -7,7 +7,7 @@ $password = 'kagome';
 $pdo = new PDO($dsnm,$user,$password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-$sql = "SELECT user_mailaddress FROM User";
+$sql = "SELECT user_mailaddress FROM User WHERE user_mailaddress = ?";
 
 if(isset(user_mailaddress == $sql)){
 	if(nickname == NULL){
