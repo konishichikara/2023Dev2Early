@@ -3,7 +3,7 @@
 
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title>ルーム名</title>
+    <title>ニックネーム</title>
     <style>
     </style>
     <script>
@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand navbar-dark" style="background: #197905;" aria-label="2 番目のナビゲーション バーの例">
         <div class="container-fluid">
-            <a class="nav-link" href="./top.html">
+            <a class="nav-link" href="./Top.php">
                 <img src="./img/kataru.png" width="80" height="30" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="ナビゲーションを切り替える">
@@ -44,12 +44,12 @@
         </div>
     </nav>
 
-    <form action="RoomRegist.php" method="POST" style="text-align: center;">
+    <form action="NickNameRegist.php" method="POST" style="text-align: center;">
         <div class="row">
             <div class="col-md-12">
                 <div class="form-floating">
-                    <input type="text" class="form-control" pattern=".+\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]" name="room_name" required inputmode="email" minlength="0" maxlength="40">
-                    <label for="lastname">ルーム名を入力してください</label>
+                    <input type="text"  name="name" class="form-control" pattern=".+\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]" inputmode="email" minlength="0" maxlength="40">
+                    <label for="lastname">ニックネームを入力してください</label>
                     <input class="btn btn-outline-success text-dark btn-lg" type="submit" value="送信">
                 </div>
             </div>

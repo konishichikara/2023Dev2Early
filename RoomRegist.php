@@ -23,6 +23,6 @@ $ps->bindValue (1,$RoomName, PDO::PARAM_STR);
 /* 実行 */
 $ps->execute();
 
-header("Location:http://cold-yoron-2957.itigo.jp/ChatRoom.php");		/* チャットルーム画面に遷移　*/ 
+header("Location:http://katosega.backdrop.jp/system2/ChatRoom.php");		/* チャットルーム画面に遷移　*/ 
 exit();
 ?>

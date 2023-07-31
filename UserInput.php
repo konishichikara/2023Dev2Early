@@ -3,7 +3,7 @@
 
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title>トップ</title>
+    <title>新規登録</title>
     <style>
     </style>
     <script>
@@ -27,13 +27,13 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarsExample02">
             <ul class="navbar-nav">
-                <a class="nav-link" href="name.html">
+                <a class="nav-link" href="NickName.php">
                     ニックネーム登録・変更
                 </a>
-                <a class="nav-link" href="sinki.html">
+                <a class="nav-link" href="UserInput.php">
                     新規登録
                 </a>
-                <a class="nav-link" href="login.html">
+                <a class="nav-link" href="Login.php">
                     ログイン
                 </a>
                 <a class="nav-link" href="logout.php">
@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-floating">
-                            <input type="text" name="mail" class="form-control" pattern=".+\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]" value="" required inputmode="email" minlength="0" maxlength="40">
+                            <input type="text" name="mail" class="form-control" pattern=".+\.[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]" value="" required inputmode="email" minlength="0" maxlength="50">
                             <label for="lastname">メールアドレス</label>
                         </div>
                     </div>
